@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h2>JavaScript String Methods</h2>
+    <p>The concat() method joins two or more strings:</p>
+    <p id="demo"></p>
+    <script>
+        var text1 = "Hello";
+        var text2 = "World!";
+        let texto = "!";
+        //var text3 = text1 + " " + text2;
+        var v_texto = ["hola", "a", "todos", "los", "presentes"];
+        for (let i = 0; i < v_texto.length; i++) {
+            texto = texto.concat(" ", v_texto[i]);
+        }
+        document.getElementById("demo").innerHTML = texto;
+    </script>
+</body>
+
+</html>

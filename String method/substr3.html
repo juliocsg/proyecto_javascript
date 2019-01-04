@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript String Methods</h2>
+    <p>The substr() method extract a part of a string and returns the extracted parts in a new string:
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        //Cuenta desde el ultimo en caso que sea negativo el parámetro del substr
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(-4);
+        document.getElementById("demo").innerHTML = res;
+    </script>
+</body>
+
+</html>
