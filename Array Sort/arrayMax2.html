@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My array max</title>
+</head>
+
+<body>
+    <h2>JavaScript Array Sort</h2>
+    <p>The highest number is <span id="demo"></span></p>
+    <script>
+        var points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demo").innerHTML = myArrayMax(points);
+        //pendiente
+        function myArrayMax(arr) {
+            var len = arr.length;
+            var max = -Infinity;
+            while (len--) {
+                if (arr[len] > max) {
+                    max = arr[len];
+                }
+            }
+            return max;
+        }
+    </script>
+</body>
+
+</html>

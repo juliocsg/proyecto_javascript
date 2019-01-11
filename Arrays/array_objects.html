@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Objects</title>
+</head>
+
+<body>
+    <h2>JavaScript Objects</h2>
+    <p>JavaScript uses names to access object properties.</p>
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 46
+        };
+        document.getElementById("demo").innerHTML = person["firstname"];
+    </script>
+</body>
+
+</html>
