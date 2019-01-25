@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random</title>
+</head>
+
+<body>
+    <h2>JavaScript Math.random()</h2>
+    <p>Every time you click the button, getRndInteger(min, max) random number between 0 and 9 (both included):</p>
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+    <p id="demo"></p>
+    <script>
+        function getRndInteger(min, max) {
+            // body
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+    </script>
+</body>
+
+</html>

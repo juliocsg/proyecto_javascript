@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Date.parse(string) returns milliseconds.</p>
+    <p>You can use the return value to convert the string to a date object:</p>
+    <p id="demo2"></p>
+    <p id="demo"></p>
+    <script>
+        var msec = Date.parse("March 21, 2012");
+        document.getElementById("demo2").innerHTML = msec;
+        var d = new Date(msec);
+        document.getElementById("demo").innerHTML = d;
+    </script>
+</body>
+
+</html>
